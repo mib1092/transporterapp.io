@@ -343,12 +343,18 @@ button:hover {
     }
         .prefooter .content-box {
             position: relative;
+            padding-top: 3.5em;
+            padding-bottom: 5em;
         }
+            .prefooter .section-header {
+                margin-bottom: 1.4em;
+            }
             .prefooter_robot {
                 position: absolute;
                 z-index: 4;
                 bottom: 0;
-                right: 0;
+                left: 50%;
+                margin-left: 10em;
             }
 
     .footer-bottom {
