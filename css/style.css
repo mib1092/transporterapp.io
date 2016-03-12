@@ -2,20 +2,20 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:14px "Open Sans", Arial, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:16px Roboto, Arial, sans-serif; background:#fff; color:#4f6370; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
 	outline:none;
 	list-style:none;
 }
-select, input, textarea        { font-size:14px; vertical-align:middle; }
+select, input, textarea        { font-size:16px; vertical-align:middle; }
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:14px "Open Sans", Arial, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:16px Roboto, Arial, sans-serif; color:#0099f5; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -41,8 +41,20 @@ a:hover                        { text-decoration:none; }
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+a, .btn {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+a:hover,
+.btn:hover,
+input[type="submit"]:hover,
+button:hover {
+    opacity: 0.8;
+}
 .content-box {
-    max-width: 1240px;
+    max-width: 1260px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -52,19 +64,238 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrapper {
+    overflow: hidden;
     position: relative;
-    min-height: 100%;
-    margin-bottom: -225px;
 }
-.wrapper:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 225px;
+
+.section-header {
+    margin-bottom: 1.5em;
+    font-weight: 300;
+    font-size: 2.7em;
+    line-height: 1.25;
 }
+.btn {
+    min-width: 233px;
+    min-height: 51px;
+    padding: 0 1em;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 51px;
+    border: 0;
+    border-radius: 2em;
+    background: #ffca00;
+    box-shadow: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+}
+.input-style {
+    min-width: 316px;
+    min-height: 51px;
+    padding: 0 20px 0 30px;
+    font-weight: 400;
+    font-size: 0.95em;
+    line-height: 51px;
+    border: 0;
+    border-radius: 2em;
+    box-shadow: none;
+    text-shadow: none;
+    background: #fff;
+    color: #4f6370;
+    outline: none;
+}
+.input-style::-webkit-input-placeholder { color: #4f6370; }
+.input-style::-moz-placeholder { color: #4f6370; }
+.input-style:-ms-input-placeholder { color: #4f6370; }
+.input-style:-moz-placeholder { color: #4f6370; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+#header {
+    position: relative;
+    padding: 0 0 5em;
+    background: #0099F5;
+}
+    .banner-clouds {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        max-width: 100%;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+        .banner-clouds:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            left: 265px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            background: #0082fb;
+        }
+        .banner-clouds:after {
+            content: '';
+            position: absolute;
+            z-index: 3;
+            left: 207px;
+            bottom: -58px;
+            height: 116px;
+            width: 116px;
+            background: url(../img/header/cloud_icon.png) no-repeat center 29px #fff;
+            border-radius: 50%;
+        }
+        .banner-clouds span {
+            position: absolute;
+            z-index: 2;
+        }
+            .banner-clouds span img {
+                position: relative;
+                z-index: 3;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -o-user-select: none;
+                -khtml-user-select: none;
+                user-select: none;
+            }
+        .banner-clouds .sm-cloud {
+            top: 11em;
+            left: 0;
+        }
+        .banner-clouds .md-cloud {
+            top: 11em;
+            left: 32em;
+        }
+        .banner-clouds .main-cloud {
+            top: 12em;
+            left: 0;
+        }
+            .banner-clouds .main-cloud:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                top: -6em;
+                left: 4em;
+                width: 404px;
+                height: 561px;
+                background: url(../img/header/banner_shadow.png) no-repeat center transparent;
+            }
+        .banner-clouds .under-cloud {
+            bottom: 5.3em;
+            left: 192px;
+        }
+
+    .header-top {
+        overflow: hidden;
+        position: relative;
+        z-index: 3;
+        padding: 3.75em 0 1.6em;
+    }
+        .main-logo {
+            overflow: hidden;
+            float: left;
+            width: 283px;
+            height: 40px;
+            margin-right: 0.3em;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            -khtml-user-select: none;
+            user-select: none;
+        }
+            .main-logo a {
+                white-space: nowrap;
+                text-indent: 100%;
+            }
+            .main-logo a:hover {
+                opacity: 1;
+            }
+        .main-nav {
+            overflow: hidden;
+            float: left;
+            margin: 0.6em 0 0 3em;
+        }
+            .main-nav li {
+                float: left;
+                margin: 0 1em;
+            }
+                .main-nav li a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 0.8em;
+                    font-weight: 700;
+                }
+        .sign-up-btn,
+        a.sign-up-btn {
+            float: right;
+            display: inline-block;
+            min-width: 181px;
+            min-height: 43px;
+            padding: 0 1em;
+            border-radius: 2em;
+            border: 2px solid #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 0.8em;
+            line-height: 39px;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+        .sign-in-btn,
+        a.sign-in-btn {
+            position: absolute;
+            right: 343px;
+            top: 75px;
+            display: inline-block;
+            padding-right: 65px;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: 0.8em;
+            font-weight: 300;
+            color: #fff;
+            white-space: nowrap;
+        }
+            .sign-in-btn:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: -15px;
+                display: inline-block;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: url(../img/header/lock_icon.png) no-repeat center #0082fb;
+            }
+
+    .banner-box {
+        position: relative;
+        z-index: 3;
+        width: 600px;
+        margin: 3em 0 0;
+        color: #fff;
+    }
+        .banner-box p {
+            margin-bottom: 1em;
+            font-weight: 300;
+            font-size: 1.4em;
+            line-height: 1.25;
+        }
+        .banner-box .subscribe-form {
+            overflow: hidden;
+            padding-top: 2.4em;
+        }
+            .banner-box .subscribe-form li {
+                float: left;
+                margin-right: 13px;
+            }
 
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------NAV-----------------------------------------*/

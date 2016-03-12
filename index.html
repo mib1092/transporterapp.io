@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Transporter App</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
@@ -15,11 +15,51 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="home">
     <div class="wrapper">
-        <header id="header"></header>
+        <header id="header">
+            <div class="banner-clouds">
+                <span class="sm-cloud"><img src="img/header/cloud_sm.png" alt=""></span>
+                <span class="md-cloud"><img src="img/header/cloud_md.png" alt=""></span>
+                <span class="main-cloud"><img src="img/header/cloud_lg.png" alt=""></span>
+                <span class="under-cloud"><img src="img/header/browser_icon.png" alt=""></span>
+            </div>
+
+            <div class="header-top content-box">
+                <h1 class="main-logo">
+                    <a href="#">
+                        <img src="img/header/logo.png" alt="Transporter App">
+                        Transporter App
+                    </a>
+                </h1>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="http://docs.transporterapp.io/">Help</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="sign-up-btn">Sign up for beta</a>
+                <a href="#" class="sign-in-btn" target="_blank">Sign In</a>
+            </div>
+
+            <div class="content-box">
+                <div class="banner-box">
+                    <h2 class="section-header">How much time <br>do you spend uploading <br>screenshots?</h2>
+                    <p><strong>Transporter</strong> let’s you upload hundreds <br>of different and localised screenshots <br>to iTunes Connect with one click.</p>
+                    <form class="subscribe-form clear" action="#" method="post">
+                        <ul>
+                            <li><input class="input-style" type="email" name="email" placeholder="Email address"></li>
+                            <li><input class="btn" type="submit" value="Sign up for beta"></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </header>
+
         <main id="main"></main>
-        <aside id="sidebar"></aside>
         <footer id="footer"></footer>
     </div>
 
