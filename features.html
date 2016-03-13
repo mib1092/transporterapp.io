@@ -9,6 +9,8 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -108,6 +110,33 @@
                     </li>
                 </ul>
             </section>
+
+            <section class="save-section">
+                <div class="section-box">
+                    <div class="graph-box">
+                        <div class="graph-slider">
+                            <div>
+                                <h3 class="graph-header">Average time to upload 150 screenshots <br>in 5 localisations</h3>
+                                <img class="graph-img" src="img/content/graph_img.png" alt="Average time to upload 150 screenshots in 5 localisations">
+                            </div>
+                            <div>
+                                <h3 class="graph-header">Average time to upload 300 screenshots in 5 localisations</h3>
+                                <img class="graph-img" src="img/content/graph_img.png" alt="Average time to upload 300 screenshots in 5 localisations">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-box">
+                        <div class="save-content">
+                            <h2 class="section-header">Save valuable <br>time and money</h2>
+                            <p>Uploading screenshots for all available device sizes and different localisations is exhausting
+                                with existing tools. Especially if you manage a lot of apps or produce regular updates.
+                                With Transporter you can save time and money uploading screenshots with on click.
+                                Spend your time developing or something else, but do not waste it with the unreliable iTunes Connect.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer id="footer">
@@ -149,6 +178,20 @@
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/mainJs.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <!-- for slick slider -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.graph-slider').slick({
+                dots: true,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+//                autoplay: true,
+                autoplaySpeed: 4000
+            });
+        });
+    </script>
 </body>
 </html>

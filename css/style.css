@@ -564,6 +564,89 @@ img {
                 margin-right: auto;
             }
 
+.save-section {
+    position: relative;
+    background: #eef5f8;
+    background: -moz-linear-gradient(left, rgba(238,245,248,1) 0%, rgba(238,245,248,1) 50%, rgba(0,184,197,1) 50%, rgba(0,184,197,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(238,245,248,1)), color-stop(50%, rgba(238,245,248,1)), color-stop(50%, rgba(0,184,197,1)), color-stop(100%, rgba(0,184,197,1)));
+    background: -webkit-linear-gradient(left, rgba(238,245,248,1) 0%, rgba(238,245,248,1) 50%, rgba(0,184,197,1) 50%, rgba(0,184,197,1) 100%);
+    background: -o-linear-gradient(left, rgba(238,245,248,1) 0%, rgba(238,245,248,1) 50%, rgba(0,184,197,1) 50%, rgba(0,184,197,1) 100%);
+    background: -ms-linear-gradient(left, rgba(238,245,248,1) 0%, rgba(238,245,248,1) 50%, rgba(0,184,197,1) 50%, rgba(0,184,197,1) 100%);
+    background: linear-gradient(to right, rgba(238,245,248,1) 0%, rgba(238,245,248,1) 50%, rgba(0,184,197,1) 50%, rgba(0,184,197,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef5f8', endColorstr='#00b8c5', GradientType=1 );
+}
+    .save-section .section-box {
+        position: relative;
+    }
+        .graph-box {
+            position: absolute;
+            z-index: 11;
+            left: 41%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            margin-left: 15px;
+            background: #00B9C5;
+            color: #fff;
+        }
+            .graph-slider {
+                position: static;
+                padding: 4.5em 4em 1em;
+                margin-bottom: 0;
+            }
+                .graph-header {
+                    padding-left: 0.2em;
+                    margin-bottom: 2em;
+                    font-weight: 300;
+                    font-size: 1.4em;
+                }
+                .graph-img {
+                    max-width: 100%;
+                    width: auto;
+                    height: auto;
+                }
+            .graph-slider .slick-dots {
+                bottom: 1.8em;
+                margin-left: -4em;
+            }
+                .graph-slider .slick-dots li {
+                    width: 11px;
+                    height: 11px;
+                    margin: 0 5px;
+                    padding: 0;
+                }
+                    .graph-slider .slick-dots li button {
+                        width: 11px;
+                        height: 11px;
+                        padding: 0;
+                    }
+                        .graph-slider .slick-dots li button:before {
+                            font-size: 13px;
+                            line-height: 1;
+                            width: 11px;
+                            height: 11px;
+                            color: #0f98a1;
+                            opacity: 1;
+                        }
+                        .graph-slider .slick-dots li.slick-active button:before,
+                        .graph-slider .slick-dots li button:hover:before,
+                        .graph-slider .slick-dots li button:focus:before,
+                        .graph-slider .slick-dots li button:hover,
+                        .graph-slider .slick-dots li button:focus {
+                            opacity: 1;
+                            color: #fff;
+                        }
+        .save-content {
+            position: relative;
+            float: left;
+            width: 41%;
+            padding: 3.4em 4.7em 4.4em 0;
+        }
+            .save-content p {
+                padding-right: 45px;
+            }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
