@@ -189,7 +189,8 @@ img {
         overflow: hidden;
         position: relative;
         z-index: 3;
-        padding: 3.75em 0 1.6em;
+        padding-top: 3.75em;
+        padding-bottom: 1.6em;
     }
         .main-logo {
             overflow: hidden;
@@ -354,7 +355,7 @@ img {
         left: 41%;
         width: 241px;
         height: 354px;
-        margin-left: -51px;
+        margin-left: -52px;
         background: url(../img/content/video_robot.png) no-repeat center transparent;
     }
     .video-section .section-box {
@@ -408,7 +409,6 @@ img {
                     line-height: 162px;
                     border-radius: 50%;
                     background: #EEF5F8;
-                    vertical-align: middle;
                     text-align: center;
                 }
                     .advantages-list .icon-wrap img {
@@ -475,6 +475,94 @@ img {
         .feedback-content footer {
             font-size: 0.7em;
         }
+
+/*------------------------------------FEATURED--------------------------------------*/
+.under-banner-section {
+    position: relative;
+    z-index: 5;
+    height: 11.3em;
+    margin-top: 1.5em;
+    background: #eef5f8;
+}
+    .under-banner-section .content-box {
+        position: relative;
+    }
+        .under-banner-section img {
+            position: absolute;
+            z-index: 10;
+            left: -2.5em;
+            top: -13.3em;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+
+.features-advantages-section {
+    padding-top: 3.5em;
+}
+    .section-header-descrip {
+        margin-top: -1.75em;
+        margin-bottom: 2.4em;
+        font-size: 1.4em;
+        line-height: 1.25;
+    }
+    .features-advantages-section .section-header,
+    .features-advantages-section .section-header-descrip {
+        text-align: center;
+        font-weight: 400;
+    }
+    .features-advantages-section .section-header-descrip {
+        max-width: 800px;
+        margin: -1.75em auto 2.4em;
+    }
+    .features-advantages-list {
+        overflow: hidden;
+        margin-bottom: 2em;
+    }
+        .features-advantages-list li {
+            display: inline-table;
+            width: 33%;
+            text-align: center;
+            padding: 1em 1.5em;
+            margin-bottom: 1.4em;
+        }
+            .features-advantages-list .icon-wrap {
+                display: inline-block;
+                height: 124px;
+                width: 124px;
+                margin-bottom: 1.35em;
+                background: #EEF5F8;
+                text-align: center;
+                border-radius: 50%;
+                line-height: 124px;
+                clear: both;
+            }
+                .features-advantages-list .icon-wrap img {
+                    line-height: normal;
+                    vertical-align: middle;
+                }
+                .features-advantages-list li:nth-child(2) .icon-wrap img {
+                    position: relative;
+                    top: -4px;
+                }
+            .features-advantages-list h3 {
+                margin-bottom: 0.5em;
+                text-transform: uppercase;
+                color: #f95656;
+                font-weight: 400;
+                font-size: 1.4em;
+            }
+            .features-advantages-list p {
+                color: #657a86;
+                font-size: 1.05em;
+                line-height: 1.15;
+            }
+            .features-advantages-list h3,
+            .features-advantages-list p {
+                max-width: 340px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
