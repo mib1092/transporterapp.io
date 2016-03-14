@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=1250">
     <title>Transporter App</title>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,10 +51,10 @@
                 <div class="banner-box">
                     <h2 class="section-header">How much time <br>do you spend uploading <br>screenshots?</h2>
                     <p><strong>Transporter</strong> let’s you upload hundreds <br>of different and localised screenshots <br>to iTunes Connect with one click.</p>
-                    <form class="subscribe-form clear" action="#" method="post">
+                    <form class="subscribe-form clear" action="" name="sign-up-beta" method="post">
                         <ul>
                             <li><input class="input-style" type="email" name="email" placeholder="Email address"></li>
-                            <li><input class="btn" type="submit" value="Sign up for beta"></li>
+                            <li><input class="btn feedback" name="send" type="submit" value="Sign up for beta"></li>
                         </ul>
                     </form>
                 </div>
@@ -160,10 +162,10 @@
                 <div class="content-box">
                     <div class="half-box">
                         <h2 class="section-header">Start saving time and focus on your apps</h2>
-                        <form class="subscribe-form clear" action="#" method="post">
+                        <form class="subscribe-form clear" action="" name="sign-up-beta" method="post">
                             <ul>
                                 <li><input class="input-style" type="email" name="email" placeholder="Email address"></li>
-                                <li><input class="btn" type="submit" value="Sign up for beta"></li>
+                                <li><input class="btn feedback" name="send" type="submit" value="Sign up for beta"></li>
                             </ul>
                         </form>
                     </div>
@@ -194,6 +196,11 @@
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="feedback/js/jquery.arcticmodal.js"></script>
+    <script type="text/javascript" src="feedback/js/feedback.js"></script>
     <script src="js/mainJs.js"></script>
+    <!--[if lt IE 10]>
+    <script src="js/placeholders.min.js"></script>
+    <![endif]-->
 </body>
 </html>

@@ -906,3 +906,37 @@ img {
             color: #4f6370;
             font-size: 0.7em;
         }
+
+/*----------------------------------------------------------------------------------*/
+/*--------------------------------------OTHER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#feedback-modal-box {
+    width: 100%;
+    min-width: 350px;
+    max-width: 600px;
+    border-radius: 12px;
+}
+    .modal-close {
+        background: #0082fb;
+        border-radius: 50%;
+        font-size: 24px;
+        line-height: 27px;
+        font-family: Arial;
+        -webkit-transition: transform 0.5s ease-out;
+        -moz-transition: transform 0.5s ease-out;
+        -o-transition: transform 0.5s ease-out;
+        transition: transform 0.5s ease-out;
+    }
+    .modal-close:hover {
+        background: #0099F5;
+        opacity: 1;
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    #feedback-modal-box #feedback-infolist {
+        font-size: 1.2em;
+        font-weight: 300;
+    }
