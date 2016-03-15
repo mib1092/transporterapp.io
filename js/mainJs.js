@@ -5,15 +5,8 @@ $(document).ready(function(){
     });
 
     // for FAQ section
-    flag = true;
     $(".question-head").on('click', function(){
-        if (flag == true) {
-            $(this).addClass('open');
-            flag = false;
-        } else {
-            $(this).removeClass('open');
-            flag = true;
-        }
         $(this).siblings('.question-answer').slideToggle();
+        $(this).toggleClass('open');
     });
 });

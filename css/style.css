@@ -143,7 +143,8 @@ img {
             content: '';
             position: absolute;
             z-index: 1;
-            left: 265px;
+            margin-left: 265px;
+            left: 0;
             top: 0;
             bottom: 0;
             right: 0;
@@ -244,7 +245,8 @@ img {
         .sign-in-btn,
         a.sign-in-btn {
             position: absolute;
-            right: 338px;
+            left: 50%;
+            margin-left: 184px;
             top: 75px;
             display: inline-block;
             padding-right: 65px;
@@ -380,7 +382,7 @@ img {
             padding: 3.4em 4.7em 4.4em 0;
         }
             .video-content p {
-                padding-right: 95px;
+                max-width: 330px;
             }
 
 .advantages-section {
@@ -1208,3 +1210,10 @@ img {
         font-size: 1.2em;
         font-weight: 300;
     }
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------------RESPONSIVE------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@media all and (max-width: 1249px) {
+
+}
