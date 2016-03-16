@@ -66,6 +66,9 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
+.not-desktop {
+    display: none;
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
@@ -223,6 +226,48 @@ img {
                     font-size: 0.8em;
                     font-weight: 700;
                 }
+            .btn-menu {
+                display: none;
+                text-align: right;
+            }
+                .btn-toggle {
+                    position: relative;
+                    display: inline-block;
+                    height: 19px;
+                    width: 28px;
+                    margin: 15px 20px 8px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                    .btn-toggle-line,
+                    .btn-toggle:before,
+                    .btn-toggle:after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        height: 3px;
+                        width: 28px;
+                        background: #fff;
+                        -webkit-transition-duration: 0.2s;
+                        -o-transition-duration: 0.2s;
+                        -moz-transition-duration: 0.2s;
+                        transition-duration: 0.2s;
+                    }
+                    .btn-toggle-line {
+                        top: 8px;
+                    }
+                    .btn-toggle:before {
+                        top: 0;
+                    }
+                    .btn-toggle:after {
+                        bottom: 0;
+                    }
+                    .btn-toggle:hover .btn-toggle-line,
+                    .btn-toggle:hover:before,
+                    .btn-toggle:hover:after {
+                        opacity: 0.8;
+                    }
+
         .sign-up-btn,
         a.sign-up-btn {
             float: right;
@@ -857,7 +902,7 @@ img {
     .pricing .sign-in-btn,
     .pricing a.sign-in-btn {
         position: relative;
-        right: 0;
+        left: 0;
         top: 0;
         float: right;
         background: url(../img/header/lock_icon.png) no-repeat right center #0082fb;
@@ -874,6 +919,7 @@ img {
             display: none;
         }
     .pricing-header-box {
+        padding-top: 1.7em;
         padding-bottom: 2.7em;
     }
         .pricing-header-box .section-header {
@@ -1215,5 +1261,118 @@ img {
 /*------------------------------------RESPONSIVE------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 @media all and (max-width: 1249px) {
-
+    .video-content {
+        width: 50%;
+        padding-right: 4em;
+    }
+    .video-content p {
+        max-width: none;
+        padding-right: 7em;
+    }
+    .video-box {
+        left: 50%;
+    }
+    .video-section:after {
+        left: 50%;
+        margin-left: -92px;
+    }
+    .feedback-content {
+        padding-top: 3em;
+    }
+    .feedback-content > p {
+        margin-bottom: 3.5em;
+    }
+}
+@media all and (max-width: 1023px) {
+    body {
+        font-size: 14px;
+    }
+    .desktop {
+        display: none !important;
+    }
+    .not-desktop {
+        display: block;
+    }
+    .header-top {
+        overflow: visible;
+        height: 104px;
+        z-index: 1000;
+        padding-top: 3em;
+    }
+    .main-nav {
+        position: absolute;
+        overflow: visible;
+        float: none;
+        margin: 0;
+        right: 1em;
+        top: 3em;
+        margin-top: -8px;
+    }
+    .btn-menu {
+        display: block;
+    }
+    .main-nav .toggle-box {
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        right: -15px;
+        width: 35%;
+        min-width: 250px;
+        padding: 1.5em 0 2em;
+        margin: 5px 0 0;
+        background: #0099F5;
+        text-align: right;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+        -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    }
+    .main-nav .toggle-box li {
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 0 1em 0.5em;
+    }
+    .main-nav .toggle-box a {
+        display: block;
+        padding: 0.8em 1em;
+        font-size: 1em;
+    }
+    .main-nav .sign-nav-btn {
+        margin-top: 2em;
+    }
+    .main-nav .sign-nav-btn li {
+        margin-top: 1em;
+        margin-left: 1.5em;
+    }
+    .main-nav .sign-nav-btn li:first-child {
+        margin-top: 0;
+    }
+    .main-nav .sign-nav-btn a {
+        display: inline-block;
+        min-width: 180px;
+        width: 100%;
+        min-height: 43px;
+        padding: 0 1em;
+        border-radius: 2em;
+        border: 2px solid #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.9em;
+        line-height: 39px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .main-nav .sign-nav-btn a.sign-in {
+        background: url(../img/header/lock_icon.png) no-repeat right center #0082fb;
+        background-origin: content-box;
+        min-width: 141px;
+        width: auto;
+        padding: 0 1.5em 0 2.5em;
+        text-align: left;
+        border: none;
+        line-height: 43px;
+    }
 }
