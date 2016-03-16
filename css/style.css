@@ -100,6 +100,12 @@ img {
     color: #fff;
     outline: none;
 }
+input[type="submit"].btn:hover,
+.btn:hover {
+    opacity: 1;
+    background: #fff;
+    color: #ffca00;
+}
 .input-style {
     min-width: 316px;
     min-height: 51px;
@@ -294,6 +300,11 @@ img {
             vertical-align: middle;
             white-space: nowrap;
         }
+            a.sign-up-btn:hover {
+                opacity: 1;
+                background: #fff;
+                color: #0082fb;
+            }
         .sign-in-btn,
         a.sign-in-btn {
             position: absolute;
@@ -960,66 +971,62 @@ img {
     .prices-list {
         position: relative;
         z-index: 5;
+        margin-left: -20px;
+        margin-right: -20px;
     }
         .prices-list > li {
             float: left;
-            width: 276px;
-            min-height: 470px;
-            margin: 0 19px;
-            padding: 33px 30px 10px;
-            background: #fff;
-            color: #0099f5;
-            text-align: center;
-            -webkit-box-shadow: 0 0 50px 0 rgba(50, 50, 50, 0.1);
-            -moz-box-shadow: 0 0 50px 0 rgba(50, 50, 50, 0.1);
-            box-shadow: 0 0 50px 0 rgba(50, 50, 50, 0.1);
+            width: 25%;
+            padding: 0 20px;
         }
-        .prices-list > li:first-child,
-        .prices-list > li:nth-child(4n+1){
-            margin-left: 0;
-        }
-        .prices-list > li:last-child,
-        .prices-list > li:nth-child(4n){
-            margin-right: 0;
-        }
-            .prices-list h3 {
-                font-weight: 700;
-                font-size: 1.7em;
-                margin-bottom: 0.9em;
-            }
-            .price-wrap {
-                display: inline-block;
-                height: 162px;
-                width: 162px;
-                margin-bottom: 8px;
-                position: relative;
-                border: 1px solid #0099f5;
-                border-radius: 50%;
-                text-align: center;
+            .prices-list-box {
+                min-height: 470px;
+                padding: 33px 30px 10px;
+                background: #fff;
                 color: #0099f5;
-                font-weight: 300;
-                font-size: 3.55em;
-                line-height: 160px;
-                white-space: nowrap;
+                text-align: center;
+                -webkit-box-shadow: 0 0 50px 0 rgba(50, 50, 50, 0.1);
+                -moz-box-shadow: 0 0 50px 0 rgba(50, 50, 50, 0.1);
+                box-shadow: 0 0 50px 0 rgba(50, 50, 50, 0.1);
             }
-                .price-wrap:after {
-                    content: '';
-                    position: absolute;
-                    z-index: 1;
-                    top: 19px;
-                    right: -5px;
-                    height: 37px;
-                    width: 37px;
-                    text-align: center;
-                    border: 2px solid #0099f5;
-                    border-radius: 50%;
-                    background: url(../img/header/dollar.png) no-repeat 11px center #fff;
+                .prices-list h3 {
+                    font-weight: 700;
+                    font-size: 1.7em;
+                    margin-bottom: 0.9em;
                 }
-            .prices-list .period {
-                display: block;
-                font-weight: 400;
-                font-size: 0.95em;
-            }
+                .price-wrap {
+                    display: inline-block;
+                    height: 162px;
+                    width: 162px;
+                    margin-bottom: 8px;
+                    position: relative;
+                    border: 1px solid #0099f5;
+                    border-radius: 50%;
+                    text-align: center;
+                    color: #0099f5;
+                    font-weight: 300;
+                    font-size: 3.55em;
+                    line-height: 160px;
+                    white-space: nowrap;
+                }
+                    .price-wrap:after {
+                        content: '';
+                        position: absolute;
+                        z-index: 1;
+                        top: 19px;
+                        right: -5px;
+                        height: 37px;
+                        width: 37px;
+                        text-align: center;
+                        border: 2px solid #0099f5;
+                        border-radius: 50%;
+                        background: url(../img/header/dollar.png) no-repeat 11px center #fff;
+                    }
+                .prices-list .period {
+                    display: block;
+                    font-weight: 400;
+                    font-size: 0.95em;
+                }
             .tariff-benefits {
                 clear: both;
                 padding: 3em 10px 0;
@@ -1056,11 +1063,18 @@ img {
     .feature-section:after {
         content: '';
         position: absolute;
+        z-index: 1;
         right: 15px;
         bottom: -59px;
         width: 209px;
         height: 315px;
         background: url(../img/content/feature_section_robot.png) no-repeat center transparent;
+    }
+    .feature-section h2,
+    .feature-section p,
+    .feature-section .read-more {
+        position: relative;
+        z-index: 3;
     }
     .feature-section h2 {
         margin-bottom: 0.27em;
@@ -1087,6 +1101,11 @@ img {
         text-decoration: none;
         text-align: center;
         color: #0099f5;
+    }
+    a.read-more:hover {
+        background: #0099f5;
+        color: #fff;
+        opacity: 1;
     }
 
 .faq-section {
@@ -1305,6 +1324,21 @@ img {
     .calculate-section .calculate-link {
         margin-right: 0.5em;
     }
+    .prices-list {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .prices-list > li {
+        padding: 0 15px;
+    }
+    .prices-list-box {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .faq-list .faq-column {
+        width: 32%;
+        margin: 0 1%;
+    }
 }
 @media all and (max-width: 1023px) {
     body {
@@ -1430,6 +1464,16 @@ img {
     .reliable-section .half-box img {
         margin-left: 2em;
     }
+    .prices-list {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .prices-list > li {
+        padding: 0 12px;
+    }
+    .prices-list-box {
+        min-height: 440px;
+    }
 }
 @media all and (max-width: 959px) {
     .banner-clouds {
@@ -1541,6 +1585,21 @@ img {
         position: absolute;
         bottom: 0;
     }
+    .feature-section {
+        padding-bottom: 3.25em;
+    }
+    .prices-section {
+        padding-bottom: 0;
+    }
+    .prices-list {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .prices-list > li {
+        width: 50%;
+        padding: 0 5%;
+        margin-bottom: 4em;
+    }
 }
 @media all and (max-width: 767px) {
     .banner-clouds {
@@ -1639,6 +1698,18 @@ img {
     }
     .user-friendly-robot {
         padding-right: 3%;
+    }
+    .faq-list {
+        max-width: 380px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .faq-list .faq-column {
+        width: 100%;
+        margin: 0 0 3em;
+    }
+    .faq-section {
+        padding-bottom: 3em;
     }
 }
 @media all and (max-width: 640px) {
@@ -1784,6 +1855,23 @@ img {
     .user-friendly-section:after {
         display: none;
     }
+    .pricing-header-box {
+        text-align: center;
+    }
+    .prices-list {
+        margin-left: -0.75em;
+        margin-right: -0.75em;
+    }
+    .prices-list > li {
+        padding: 0 1.25em;
+    }
+    .faq-section {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    .faq-section .section-header {
+        text-align: center;
+    }
 }
 @media all and (max-width: 580px) {
     .input-style, .btn {
@@ -1887,6 +1975,35 @@ img {
     .additional-section h2:before {
         display: none;
     }
+    .prices-list {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .prices-list > li {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .prices-list-box {
+        min-height: 400px;
+        padding-bottom: 3em;
+    }
+    .feature-section h2 {
+        margin-bottom: 0.6em;
+    }
+    a.read-more {
+        background: #0099f5;
+        color: #fff;
+        opacity: 1;
+    }
+    a.read-more:hover {
+        opacity: 0.8;
+    }
+    .question-head {
+        padding: 1em 75px 1em 25px;
+    }
+    .question-head:after {
+        right: 16px;
+    }
 }
 @media all and (max-width: 419px) {
     .header-top {
@@ -1938,5 +2055,17 @@ img {
     }
 }
 @media all and (max-width: 380px) {
-
+    .prices-list {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .prices-list > li {
+        padding: 0;
+    }
+}
+@media all and (max-width: 340px) {
+    .prices-list {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
