@@ -1016,6 +1016,7 @@ img {
                     background: url(../img/header/dollar.png) no-repeat 11px center #fff;
                 }
             .prices-list .period {
+                display: block;
                 font-weight: 400;
                 font-size: 0.95em;
             }
@@ -1295,6 +1296,15 @@ img {
     .feedback-content > p {
         margin-bottom: 3.5em;
     }
+    .under-banner-section img {
+        position: relative;
+        left: 0;
+        top: -12em;
+        padding-right: 17%;
+    }
+    .calculate-section .calculate-link {
+        margin-right: 0.5em;
+    }
 }
 @media all and (max-width: 1023px) {
     body {
@@ -1410,6 +1420,16 @@ img {
     .feedback-content {
         padding: 3em 15px 1em;
     }
+    .under-banner-section img {
+        padding-right: 10%;
+    }
+    .half-box {
+        width: 50%;
+    }
+    .side1 .half-box img,
+    .reliable-section .half-box img {
+        margin-left: 2em;
+    }
 }
 @media all and (max-width: 959px) {
     .banner-clouds {
@@ -1457,6 +1477,9 @@ img {
     .video-content p {
         padding-right: 0;
     }
+    .features .banner-clouds {
+        display: none;
+    }
 }
 @media all and (max-width: 920px) {
     .prefooter_robot {
@@ -1465,11 +1488,58 @@ img {
         bottom: -8px;
         margin-right: -189px;
     }
+    .calculate-section:before {
+        margin-left: 49px;
+    }
+    .calculate-section .calculate-link:before {
+        margin-left: -90px;
+    }
 }
 @media all and (max-width: 860px) {
     .prefooter .half-box {
         width: 100%;
         padding-right: 200px;
+    }
+    .under-banner-section {
+        height: 10em;
+    }
+    .under-banner-section img {
+        top: -10em;
+    }
+    .save-section {
+        background: #eef5f8;
+    }
+    .graph-box {
+        position: relative;
+        left: 0;
+        margin-left: 0;
+    }
+    .graph-slider {
+        padding-bottom: 4em;
+    }
+    .save-content {
+        float: none;
+        width: 100%;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    .save-content p {
+        padding-right: 0;
+    }
+    .save-content h2 br {
+        display: none;
+    }
+    .reliable-section {
+        padding-bottom: 3em;
+    }
+    .zero-time-section .half-box img,
+    .reliable-section .half-box img {
+        width: 85%;
+        height: auto;
+    }
+    .reliable-section .half-box img {
+        position: absolute;
+        bottom: 0;
     }
 }
 @media all and (max-width: 767px) {
@@ -1529,6 +1599,47 @@ img {
         width: 100%;
         min-width: auto;
     }
+    .features-advantages-list li {
+        width: 49%;
+        margin-bottom: 2em;
+    }
+    .calculate-section .section-header {
+        float: none;
+        margin: 1em 0;
+        text-align: center;
+    }
+    .calculate-section .section-header br {
+        display: none;
+    }
+    .calculate-section .calculate-link {
+        position: relative;
+        float: none;
+        display: block;
+        clear: both;
+        padding: 1em 1em 1em 200px;
+        margin: 0 -15px;
+        background: url(../img/content/calculate_icon.png) no-repeat top left #0082fb;
+        text-align: center;
+    }
+    .calculate-section .calculate-link:before {
+        display: none;
+    }
+    .calculate-section:before {
+        display: none;
+    }
+    .user-friendly-section .half-box:first-child,
+    .user-friendly-section .half-box:first-of-type {
+        padding-right: 0;
+    }
+    .user-friendly-section:after {
+        margin-left: -3.5em;
+    }
+    .user-friendly-section p {
+        max-width: none;
+    }
+    .user-friendly-robot {
+        padding-right: 3%;
+    }
 }
 @media all and (max-width: 640px) {
     .logos-list li {
@@ -1580,7 +1691,99 @@ img {
         padding-bottom: 3em;
         text-align: center;
     }
-
+    .under-banner-section {
+        height: 8em;
+    }
+    .under-banner-section img {
+        top: -8.5em;
+        padding-right: 0;
+    }
+    .graph-slider {
+        padding: 3em 1em 4em;
+    }
+    .graph-slider .slick-dots {
+        margin-left: -1em;
+    }
+    .additional-section h2 {
+        padding-left: 3em;
+    }
+    .additional-list li {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 3em;
+    }
+    .additional-list h3 {
+        margin-bottom: 1em;
+        max-width: 360px;
+        min-height: auto;
+    }
+    .zero-time-section .half-box,
+    .features .half-box,
+    .user-friendly-section .half-box {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .zero-time-section .side1 p,
+    .reliable-section p {
+        max-width: none;
+    }
+    .zero-time-section .half-box img,
+    .reliable-section .half-box img {
+        width: 100%;
+        margin-left: 0;
+    }
+    .side1 .half-box img {
+        margin-top: 2em;
+    }
+    .side2 .half-box img {
+        margin-bottom: 2em;
+    }
+    .zero-time-section .side2 .sub-header,
+    .zero-time-section .side2 p {
+        margin-left: 0;
+    }
+    .reliable-section {
+        padding-top: 2.5em;
+    }
+    .reliable-section .section-header {
+        margin-right: 0;
+    }
+    .reliable-section .half-box img {
+        position: static;
+        margin: 1em auto -3em;
+    }
+    .user-friendly-section .half-box:first-child,
+    .user-friendly-section .half-box:first-of-type {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    .user-friendly-section .half-box:nth-child(2) {
+        padding-top: 1em;
+        background: url(../img/content/user_friendly_bg.png) repeat left top #ffca00
+    }
+    .user-friendly-section .half-box:nth-child(2):before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        right: -15px;
+        left: -15px;
+        height: 100%;
+        background: url(../img/content/user_friendly_bg.png) repeat left top #ffca00;
+    }
+    .user-friendly-section .half-box:nth-child(2) img {
+        position: relative;
+        z-index: 2;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+    .user-friendly-section:after {
+        display: none;
+    }
 }
 @media all and (max-width: 580px) {
     .input-style, .btn {
@@ -1631,6 +1834,9 @@ img {
         margin-bottom: 1.5em;
         width: 100%;
     }
+    .under-banner-section img {
+        top: -7.5em;
+    }
 }
 @media all and (max-width: 480px) {
     .video-box {
@@ -1661,6 +1867,25 @@ img {
     .main-nav li {
         float: none;
         display: inline-block;
+    }
+    .under-banner-section img {
+        top: -6.5em;
+    }
+    .features-advantages-list li {
+        width: 100%;
+    }
+    .calculate-section .calculate-link {
+        padding-left: 1em;
+        text-shadow: 1px 1px 2px #000;
+    }
+    .additional-section h2 {
+        padding-left: 0;
+        text-align: center;
+        background: url(../img/content/additional_robot.png) no-repeat left top transparent;
+        background-size: contain;
+    }
+    .additional-section h2:before {
+        display: none;
     }
 }
 @media all and (max-width: 419px) {
@@ -1704,6 +1929,12 @@ img {
         top: 145px;
         width: 123px;
         height: 180px;
+    }
+    .under-banner-section {
+        margin-top: -3em;
+    }
+    .under-banner-section img {
+        top: -4.5em;
     }
 }
 @media all and (max-width: 380px) {
