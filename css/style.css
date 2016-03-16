@@ -300,7 +300,8 @@ input[type="submit"].btn:hover,
             vertical-align: middle;
             white-space: nowrap;
         }
-            a.sign-up-btn:hover {
+            a.sign-up-btn:hover,
+            .sign-nav-btn a.sign-up:hover{
                 opacity: 1;
                 background: #fff;
                 color: #0082fb;
@@ -1933,6 +1934,9 @@ input[type="submit"].btn:hover,
     }
     .video-content {
         padding-left: 0;
+    }
+    .video-content .section-header {
+        text-align: center;
     }
     .video-section:after {
         bottom: inherit;
